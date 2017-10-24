@@ -18,6 +18,7 @@ namespace Kontur.Courses.Git
 				//> 4
 				// + 1
 				//>5
+			    return Execute(args[0], double.Parse(args[1]), lastResult.Value);
 				return lastResult = Maybe<double>.FromError("Not implemented yet");
 			}
 			if (args.Length == 3)
